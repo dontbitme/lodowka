@@ -17,10 +17,7 @@ class Lodowka(object):
             self.products[index].weight += product.weight
         else:
             self.products.append(product)
-
-                
-
-                     
+                 
     def delete_product(self, product_name):
         
         index = self.find_products_index(product_name)
@@ -29,18 +26,6 @@ class Lodowka(object):
         else:
             print "there is no product with this name.."
                     
-                
-                
-            
-            
-        
-            
-            
-            
-
-     
-           
-            
     def show_products(self):
         print "------ PRODUCTS ------"
         for product in self.products:
@@ -66,8 +51,7 @@ class Lodowka(object):
         hajs = 0
         for x in self.products:
             hajs += x.price
-        print hajs    
-        
+        print hajs        
         
     def take_out(self, product):
         for a in self.products:
@@ -76,19 +60,11 @@ class Lodowka(object):
                 print "Product " + a.name +" was taken out..."
             else:
                 print "There is no product with this name..."
-             
-   
+ 
     def najwiecej(self):
         lis=[]
         for s in self.products:
-            self.products.index(s.name)        #NIE ZROBI£EM
-
-
-            
-        
-            
-            
-
+            self.products.index(s.name)        #NIE ZROBIï¿½EM
 
 class Produkt(object):
     def __init__(self, name, price, weight, expiration_date):
